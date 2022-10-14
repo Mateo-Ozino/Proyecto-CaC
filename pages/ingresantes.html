@@ -26,29 +26,30 @@
     </header>
     <main>
         <h2 class="text-center">Completá el formulario y recibí más información</h2>
-        <div class="contenedor">
-            <form id="formIngresantes" class="form-ingresantes" onsubmit="event.preventDefault()">
+        <div class="contenedor-form">
+            <form id="formIngresantes" class="form-ingresantes">
+                <div id="aviso" class="aviso"></div>
                 <div class="fila">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" name="nombre" required>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" name="nombre">
                         <label for="nombre">Nombre</label>
                     </div>
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido" name="apellido" required>
+                        <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido" name="apellido">
                         <label for="apellido">Apellido</label>
                     </div>
                     <div class="form-floating">
-                        <input type="email" class="form-control" id="mail" placeholder="Ingresa tu mail" name="mail" required>
+                        <input type="email" class="form-control" id="mail" placeholder="Ingresa tu mail" name="mail" >
                         <label for="mail">Mail</label>
                     </div>
                 </div>
                 <div class="fila">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="nacionalidad" placeholder="Ingresa tu nacionalidad" name="nacionalidad" required>
+                        <input type="text" class="form-control" id="nacionalidad" placeholder="Ingresa tu nacionalidad" name="nacionalidad">
                         <label for="nacionalidad">Nacionalidad</label>
                     </div>
                     <div class="form-floating">
-                        <select class="form-select" id="documentoTipo" name="documentoTipo" required>
+                        <select class="form-select" id="documentoTipo" name="documentoTipo" >
                             <option>DNI</option>
                             <option>Pasaporte</option>
                             <option>Precaria</option>
@@ -56,30 +57,21 @@
                         <label for="documentoTipo" class="form-label">Tipo de documento</label>
                     </div>
                     <div class="form-floating">
-                        <input type="number" class="form-control" id="documentNro" placeholder="Ingresa tu número de documento" name="documentNro" required>
-                        <label for="documentNro">Número de documento</label>
+                        <input type="number" class="form-control" id="documentoNro" placeholder="Ingresa tu número de documento" name="documentoNro" >
+                        <label for="documentoNro">Número de documento</label>
                     </div>
                     <div class="form-floating">
-                        <input type="number" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono" name="telefono" required>
+                        <input type="number" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono" name="telefono">
                         <label for="telefono">Télefono</label>
                     </div>
                 </div>
                 <div class="fila">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="residencia" placeholder="Ingresa tu pais de recidencia" name="residencia" required>
+                        <input type="text" class="form-control" id="residencia" placeholder="Ingresa tu pais de recidencia" name="residencia">
                         <label for="residencia">País de recidencia</label>
                     </div>
-                    <!-- <div class="form-floating">
-                        <select class="form-select" id="areaInteres" name="areaInteres">
-                            <option></option>
-                            <option>Carreras y programas de grado</option>
-                            <option>Doctorados, maestrías y especializaciones</option>
-                            <option>Cursos de posgrado</option>
-                        </select>
-                        <label for="areaInteres" class="form-label">Área de interés</label>
-                    </div> -->
                     <div class="form-floating">
-                        <select class="form-select" id="carrera" name="carrera" required>
+                        <select class="form-select" id="carrera" name="carrera">
                             <option></option>
                             <option>Abogacía</option>
                             <option>Arquitectura</option>

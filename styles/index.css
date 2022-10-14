@@ -74,6 +74,11 @@ footer {
     padding: 1rem;
 }
 
+.contenedor-form {
+    width: 85%;
+    margin: 0 auto;
+}
+
 .form-ingresantes {
     display: flex;
     flex-direction: column;
@@ -102,4 +107,21 @@ footer {
 
 .contenedor-submit {
     padding: 0 0 15px 15px;
+}
+
+.aviso {
+    align-self: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor-form {
+        width: 95%;
+    }
+    .form-ingresantes {
+        gap: .5rem;
+    }
+    .fila {
+        flex-direction: column;
+    }
 }
